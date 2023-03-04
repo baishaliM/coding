@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int choice=sc.nextInt();
+        switch (choice){
+            case 1:
+                System.out.println("PRESS 1 FOR BENGALI");
+                break;
+            case 2:
+                System.out.println("PRESS 2 FOR ENGLISH");
+                break;
+            case 3:
+                System.out.println("PRESS 3 FOR HINDI");
+                break;
+            case 4:
+                System.out.println("PRESS 4 FOR URDU");
+                break;   
+            default:
+                System.out.println("CHOOSE AN OPTION FROM 1 TO 4");
+
+        }
+        System.out.println("HAVE A GREAT DAY");
+    }
+}
