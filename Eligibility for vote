@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+ Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        String nationality= sc.next();
+ if(age>=18 && nationality.equalsIgnoreCase("Indian"))  {
+     if(age<=100){
+         System.out.println("YOU ARE ELIGIBLE TO VOTE");
+         System.out.println("PLESE CAST YOUR VOTE");
+     }
+     else{
+         System.out.println("PLEASE PROVIDE YOUR BIRTH CERTIFICATE");
+         
+     }
+ }  
+        else{
+            System.out.println("YOU ARE NOT ELIGIBLE TO VOTE");
+            if(nationality.equalsIgnoreCase("Indian")){
+                System.out.println("you have to be an Indian citizen to be eligible to vote");
+                
+    } else{
+                System.out.println("PLEASE COME BACK AFTER"+(18-age)+"YEARS");
+                
+            }
+        }
+        System.out.println("PLEASE STEP OUT FROM THE BALLOT");
+    }
+}
