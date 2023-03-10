@@ -1,0 +1,25 @@
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+
+	public static long sumOrProduct(int n, int q) {
+
+		long mod=(long)Math.pow(10,9)+7;
+		if(q==1){
+			long sum=0;
+			for(int i=1;i<=n;i++){
+				sum=sum+i;
+			
+			}
+			return sum;
+		}
+		else{
+			long prod=1;
+			for(long i=1;i<=n;i++){
+				prod=(prod*i)%mod;
+			}
+			return prod;
+		}
+	
+	}
+}
